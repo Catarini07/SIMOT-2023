@@ -1,3 +1,4 @@
+  /* Menu */
   nav {
     background-color: #fff;
     display: flex;
@@ -36,16 +37,20 @@
     
   }
 
-  #login {
+  #login a{
     background-color: #008000;
     border-radius: 100px;
-    padding: 0 20px;
+    padding: 20px;
     margin: 0 0 0 20px;
+    color: #fff;
+  }
+
+  #login a:hover{
     color: #000;
   }
   
   .menu li a:hover {
-    color: #f1f1f1;
+    color: #A9A9A9;
   }
 
   /*Corpo de texto*/
@@ -75,43 +80,192 @@
   }
   
   .image {
-    flex: 1;
+    flex: -2;
   }
   
   .image img {
     max-width: 100%;
     height: auto;
-    left: 50px;
+    margin-left: 220px;
   }
 
   /*Cards*/
 
   .card-inicio {
     text-align: center;
+    font-size: 25px;
+    margin-top: 8em;
   }
 
-  .card-content {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
+  .card-inicio p{
+    color: #808080;
   }
 
+   table {
+    text-align: center;
+   }
+  
   .card {
-    width: calc(25% - 20px);
-    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: 60px ;
+    background-color: #008000;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .card:hover {
     background-color: #fff;
-    box-shadow: 0 2px 4px grey;
+  }
+  
+  .card i {
+    font-size: 48px;
+    color: #000;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .card-content {
+    display: none;
+    padding: 1px;
+    text-align: center;
+    opacity: 0;
+    background-color: #b6ffa1;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover i {
+    border-radius: 0;
+    opacity: 0;
+  }
+  
+  .card:hover .card-content {
+    display: block;
+    border-radius: 0;
+    opacity: 1;
+  }
+  
+  /* Formatação de form */
+  .container2 {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    /* padding: 0 48px; */
+    font-size: 25px;
+    background-color: #008000;
+    color: #fff;
+  }
+
+  .text2 {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .lista li {
+    padding: 10px;
+  }
+
+  .form {
+    flex: -1;
+    /* font-size: 15px; */
+    margin-left: 100px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+  }
+
+  form{
+    padding: 35px;
+    width: 280px;
+  }
+
+  form p{
+    font-size: 17px;
+  }
+
+  form label {
+    font-size: 15px;
+  }
+
+  form input {
+    width: 290px;
+    height: 50px;
+    border: #808080 solid 1px;
     border-radius: 4px;
-    overflow: hidden;
+  }
+
+  form textarea {
+    width: 290px;
+    height: 50px;
+    border-radius: 4px;
+  }
+
+  form button {
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #008000;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  form button:hover {
+    background-color: #808080;
+    cursor: pointer;
+  }
+
+  /* Rodapé */
+  
+  .container3 {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
   }
   
-  .card-title {
-    font-size: 20px;
-    margin-bottom: 10px;
+  .footer {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    width: 4000px;
+    padding: 40px 0;
   }
   
-  .card-text {
-    margin-bottom: 15px;
+  .contato,
+  .redes_sociais,
+  .desenvolvedores {
+    text-align: center;
+    flex: 1;
   }
   
+  .social-links li {
+    display: inline-block;
+    padding: 8px;
+    margin-left: 5px;
+  }
   
+  .social-links a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 25px;
+  }
+  
+  .desenvolvedores p {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .direitos p {
+    color: #fff;
+  }
+  
+  .direitos a {
+    color: #fff;
+  }
