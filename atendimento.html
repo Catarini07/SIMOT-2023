@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300&display=swap');
+    html {
+      height: 100%;
+    }
+    body {
+      margin:0;
+      padding:0;
+      font-family: sans-serif;
+      background: linear-gradient(#1D390A, #008000);
+      font-family: "Poppins";
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      margin-top: 5%;
+      /* font-family: Arial, sans-serif; */
+      /* position: absolute;
+      top: 30%;
+      left: 50%; 
+      width: 400px;
+      padding: 40px;
+      transform: translate(-50%, -50%); */
+      background: rgba(0,0,0,.5);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+      color: #fff;
+    }
+
+    .faq {
+      margin-bottom: 20px;
+    }
+
+    .faq-questao {
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .faq-checkbox {
+      display: none;
+    }
+
+    .faq-checkbox:checked + .faq-questao {
+      color: #fff;
+    }
+
+    .faq-checkbox:checked + .faq-question::before {
+      content: "-";
+    }
+
+    .faq-checkbox:not(:checked) + .faq-questao::before {
+      content: "+";
+    }
+
+    .faq-checkbox:checked ~ .faq-answer {
+      display: block;
+    }
+
+    </style>
+</head>
+<body>
+  <div class="faq-container">
+    <h2>Perguntas Frequentes</h2>
+    
+    <div class="faq">
+      <input type="checkbox" id="faq-1" class="faq-checkbox">
+      <label for="faq-1" class="faq-questao">Como faço para criar uma conta?</label>
+      <div class="faq-answer">
+        <p>Para criar uma conta, siga os seguintes passos:</p>
+        <ol>
+          <li>Acesse nosso site e clique em "Login".</li>
+          <li>Preencha o formulário com suas informações pessoais.</li>
+          <li>Confirme seu e-mail de cadastro.</li>
+          <li>Pronto! Sua conta foi criada com sucesso.</li>
+        </ol>
+      </div>
+    </div>
+    
+    <div class="faq">
+      <input type="checkbox" id="faq-2" class="faq-checkbox">
+      <label for="faq-2" class="faq-questao">Como faço para entrar em contato com o suporte?</label>
+      <div class="faq-answer">
+        <p>Você pode entrar em contato com nosso suporte das seguintes maneiras:</p>
+        <ul>
+          <li>Envie um e-mail para suporte@exemplo.com.</li>
+          <li>Ligue para o número (00) 1234-5678 durante o horário comercial.</li>
+          <li>Preencha o formulário de contato em nosso site.</li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+  
+</body>
+</html>
